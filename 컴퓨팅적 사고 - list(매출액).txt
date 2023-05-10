@@ -1,0 +1,13 @@
+year_sale = {"2017" : 1520, "2018" : 2380, "2019" : 990, "2020" : 1300}
+
+year = input("추가할 년도 : ")
+sale = int(input("매출액 : "))
+
+year_sale[year] = sale
+
+search = input("알고싶은 연도 : ")
+print("{0}년도의 매출액은 {1}원입니다.".format(search, year_sale[search]))
+
+total = sum(list(year_sale.values()))
+
+print(total)
